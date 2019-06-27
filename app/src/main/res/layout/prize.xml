@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="3dp"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp"
+    android:paddingTop="3dp"
+    tools:context=".Notif">
+
+    <pl.droidsonroids.gif.GifTextView
+        android:layout_width="175dp"
+        android:gravity="center_horizontal"
+        android:layout_height="100dp"
+        android:id="@+id/mologo2"
+        android:background="@drawable/encoreref2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+         />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/mologo2"
+        android:id="@+id/scrollView"
+        android:fadeScrollbars="true"
+        android:scrollbarThumbVertical="@android:color/darker_gray"
+
+        android:fastScrollEnabled="true"
+        android:fastScrollAlwaysVisible="true"
+        android:clickable="false"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="3dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text=""
+            android:id="@+id/textView14"
+            android:textColor="@color/mytextc"
+            android:paddingRight="3dp" />
+    </ScrollView>
+
+</RelativeLayout>

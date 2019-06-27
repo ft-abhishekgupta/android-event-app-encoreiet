@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "671306068195",
+    "firebase_url": "https://encore-iet.firebaseio.com",
+    "project_id": "encore-iet",
+    "storage_bucket": "encore-iet.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:671306068195:android:e801ee547f9f7c49",
+        "android_client_info": {
+          "package_name": "com.iet.lucknow.encore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "671306068195-pv6up7vv9mngqlvk3ddks219qj6f385j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9NGeDKba3z5j4kIcs1du-WTyIrQDRp_U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

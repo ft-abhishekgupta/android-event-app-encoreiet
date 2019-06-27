@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="450dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:weightSum="3"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout">
+
+        <pl.droidsonroids.gif.GifTextView
+            android:layout_width="80dp"
+            android:layout_height="90dp"
+
+            android:visibility="invisible"
+            android:id="@+id/mologo"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:id="@+id/mologotext"
+            android:layout_weight="2"
+            android:src="@drawable/ee"
+
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:paddingTop="20dp" />
+
+    </LinearLayout>
+
+    <!--<ScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:id="@+id/scrollView"-->
+    <!--android:layout_below="@+id/linearLayout"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_centerHorizontal="true" >-->
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="400dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="450dp"
+        android:layout_below="@+id/linearLayout"
+        android:gravity="bottom">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:weightSum="6">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:weightSum="2"
+                    android:layout_weight="1">
+                    <!--android:drawableStart="@drawable/arrow"-->
+                    <com.romainpiel.shimmer.ShimmerButton
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:reflectionColor="#313131"
+                        android:text="EVENTS &amp; COMPETITIONS"
+
+                        android:id="@+id/button3"
+                        android:layout_weight="2"
+                        android:layout_margin="8dp"
+                        android:background="#55686868"
+                        android:textColor="@color/mytextc"
+                        android:onClick="mevent"
+
+                        android:textAlignment="center"
+                        android:maxWidth="150dp" />
+
+
+                </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:weightSum="2"
+                android:layout_weight="1">
+
+                <com.romainpiel.shimmer.ShimmerButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="SCHEDULE"
+                    app:reflectionColor="#313131"
+
+                    android:id="@+id/button4"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:background="#55686868"
+                    android:textColor="@color/mytextc"
+                    android:onClick="mschedule"
+                    android:textAlignment="center"
+                    android:maxWidth="150dp" />
+                <com.romainpiel.shimmer.ShimmerButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/button5"
+                    app:reflectionColor="#313131"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:background="#55686868"
+                    android:textColor="@color/mytextc"
+                    android:text="NEWS FEED"
+                    android:onClick="mnotification"
+                    android:textAlignment="center"
+                    android:maxWidth="150dp" />
+            </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:weightSum="2"
+                    android:layout_weight="1">
+
+                    <com.romainpiel.shimmer.ShimmerButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/button6"
+                        app:reflectionColor="#313131"
+                        android:layout_weight="1"
+                        android:layout_margin="8dp"
+                        android:background="#55686868"
+                        android:textColor="@color/mytextc"
+                        android:text="PRIZES"
+                        android:onClick="mprize"
+                        android:textAlignment="center"
+                        android:maxWidth="150dp" />
+                    <com.romainpiel.shimmer.ShimmerButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="REGISTER"
+                        app:reflectionColor="#313131"
+                        android:id="@+id/button9"
+                        android:layout_weight="1"
+                        android:background="#55686868"
+                        android:textColor="@color/mytextc"
+                        android:layout_margin="8dp"
+                        android:onClick="mregister"
+                        android:textAlignment="center"
+                        android:maxWidth="150dp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:weightSum="2"
+                    android:layout_weight="1">
+
+                    <com.romainpiel.shimmer.ShimmerButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="GALLERY"
+                        app:reflectionColor="#313131"
+                        android:id="@+id/button7"
+                        android:layout_weight="1"
+                        android:background="#55686868"
+                        android:textColor="@color/mytextc"
+                        android:layout_margin="8dp"
+                        android:onClick="mposters"
+                        android:textAlignment="center"
+                        android:maxWidth="150dp" />
+                    <com.romainpiel.shimmer.ShimmerButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="TEAM"
+                        app:reflectionColor="#313131"
+                        android:id="@+id/button8"
+                        android:layout_weight="1"
+                        android:background="#55686868"
+                        android:textColor="@color/mytextc"
+                        android:layout_margin="8dp"
+                        android:onClick="mteam"
+                        android:textAlignment="center"
+                        android:maxWidth="150dp" />
+
+                </LinearLayout>
+
+
+
+
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:weightSum="2"
+                    android:layout_weight="1">
+
+                    <com.romainpiel.shimmer.ShimmerButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="ABOUT"
+                        app:reflectionColor="#313131"
+                        android:id="@+id/button11"
+                        android:layout_weight="1"
+                        android:layout_margin="8dp"
+                        android:background="#55686868"
+                        android:textColor="@color/mytextc"
+                        android:onClick="maboutus"
+                        android:textAlignment="center"
+                        android:maxWidth="150dp" />
+                    <com.romainpiel.shimmer.ShimmerButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="SPONSORS"
+                        app:reflectionColor="#313131"
+                        android:id="@+id/button12"
+                        android:layout_weight="1"
+                        android:layout_margin="8dp"
+                        android:background="#55686868"
+                        android:textColor="@color/mytextc"
+                        android:onClick="msponsors"
+                        android:textAlignment="center"
+                        android:maxWidth="150dp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:weightSum="2"
+                    android:layout_weight="1">
+
+                    <com.romainpiel.shimmer.ShimmerButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="CONTACT"
+                        app:reflectionColor="#313131"
+                        android:id="@+id/button13"
+                        android:layout_weight="1"
+                        android:layout_margin="8dp"
+                        android:background="#55686868"
+                        android:textColor="@color/mytextc"
+                        android:onClick="mcontactus"
+                        android:textAlignment="center"
+                        android:maxWidth="150dp" />
+                    <com.romainpiel.shimmer.ShimmerButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="DEVELOPER"
+                        app:reflectionColor="#313131"
+                        android:id="@+id/button14"
+                        android:layout_weight="1"
+                        android:layout_margin="8dp"
+                        android:background="#55686868"
+                        android:textColor="@color/mytextc"
+                        android:onClick="mdeveloper"
+                        android:textAlignment="center"
+                        android:maxWidth="150dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <!--</ScrollView>-->
+
+
+
+
+</RelativeLayout>

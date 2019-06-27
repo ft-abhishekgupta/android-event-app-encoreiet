@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Encore IET 17</string>
+    <string name="website">http://www.ietencore.com</string>
+    <string name="youtube">https://www.youtube.com/channel/UC6FrHTYaSiwhicXhIrzcniw</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <integer name="card_flip_time_full">1000</integer>
+    <integer name="card_flip_time_half">500</integer>
+</resources>

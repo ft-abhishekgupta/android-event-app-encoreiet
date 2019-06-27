@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingRight="20dp"
+    android:paddingLeft="20dp">
+
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="270dp"
+        android:id="@+id/imageView26"
+        android:layout_alignParentEnd="false"
+        android:layout_centerInParent="true"
+        android:layout_alignParentStart="false" />
+
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="270dp"
+        android:id="@+id/imageView29"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/abc" />
+
+    <TextView
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Event name"
+        android:id="@+id/textView22"
+        android:paddingLeft="10dp"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="0dp"
+
+        android:layout_alignBottom="@+id/imageView26"
+        android:layout_marginBottom="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="20dp"
+        android:textAlignment="textStart"
+        android:textStyle="italic"
+        android:layout_alignEnd="@+id/imageView29"
+        android:layout_alignParentStart="false"
+        android:layout_alignStart="@+id/imageView29" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textView33"
+        android:paddingLeft="10dp"
+        android:textColor="@color/mytextc"
+        android:layout_alignBottom="@+id/textView22"
+        android:layout_toStartOf="@+id/textView34" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView34"
+        android:textColor="@color/mytextc"
+        android:layout_marginRight="10dp"
+        android:layout_alignBottom="@+id/textView22"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

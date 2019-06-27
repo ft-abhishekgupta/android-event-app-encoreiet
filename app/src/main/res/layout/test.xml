@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Type : Individual\n Registration Fees: Rs. 30/-\n Maximum no. of Team Members: 2\n Duration: 2 Hrs\n  \n  - You have to sketch of a person or a place or a object by using pencils only.\n  - You will be provided with A3 sheet(200gsm).\n  - Pencils will be provided by us. The sketch has to be made by not more than 3 shades of pencil.\n \n ​For more info, contact:\n Arun Kr. Gautam (9451318792)\n Rahul Srivastava (8182823380)\n"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2" />
+</LinearLayout>
