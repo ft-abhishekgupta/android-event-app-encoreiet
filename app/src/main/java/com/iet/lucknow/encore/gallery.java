@@ -17,15 +17,17 @@ import com.bumptech.glide.Glide;
  */
 public class gallery extends Fragment {
     View v;
-    String gallery[][]=alldata.posters;
-    int size=gallery.length;
-    TextView tv[]=new TextView[size];ImageView im[]=new ImageView[size];
+    String gallery[][] = alldata.posters;
+    int size = gallery.length;
+    TextView tv[] = new TextView[size];
+    ImageView im[] = new ImageView[size];
+
     @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        v=inflater.inflate(R.layout.gallery,container,false);
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
+            @Nullable Bundle savedInstanceState) {
+        v = inflater.inflate(R.layout.gallery, container, false);
         getActivity().setTitle("Encore Gallery");
-
         return v;
     }
 
@@ -33,13 +35,15 @@ public class gallery extends Fragment {
     public void onResume() {
         super.onResume();
         Resources res = getResources();
-        for(int i=1;i<size;i++) {
-            String b="tv"+i;
-            String c="im"+i;
-            tv[i]= (TextView) getView().findViewById(res.getIdentifier(b, "id", getContext().getPackageName()));
-            im[i]= (ImageView) getView().findViewById(res.getIdentifier(c, "id", getContext().getPackageName()));
+        for (int i = 1; i < size; i++) {
+            String b = "tv" + i;
+            String c = "im" + i;
+            tv[i] = (TextView) getView().findViewById(res.getIdentifier(b, "id", getContext().getPackageName()));
+            im[i] = (ImageView) getView().findViewById(res.getIdentifier(c, "id", getContext().getPackageName()));
             tv[i].setText(gallery[i][0]);
-            Glide.with(getContext()).load(getResources().getIdentifier(gallery[i][1],"drawable",getActivity().getPackageName())).crossFade().into(im[i]);
+            Glide.with(getContext())
+                    .load(getResources().getIdentifier(gallery[i][1], "drawable", getActivity().getPackageName()))
+                    .crossFade().into(im[i]);
         }
     }
 }

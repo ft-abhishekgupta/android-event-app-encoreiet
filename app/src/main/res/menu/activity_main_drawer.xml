@@ -51,41 +51,9 @@
     <item android:title="LINKS-">
         <menu>
             <item
-                android:id="@+id/regi"
-                android:icon="@drawable/arrow"
-                android:title="Register" />
-            <item
-                android:id="@+id/regibw"
-                android:icon="@drawable/arrow"
-                android:title="Register(Band Wars)" />
-            <item
-                android:id="@+id/website"
-                android:icon="@drawable/arrow"
-                android:title="Website" />
-            <item
-                android:id="@+id/rule"
-                android:icon="@drawable/arrow"
-                android:title="Rulebook" />
-            <item
-                android:id="@+id/youtube"
-                android:icon="@drawable/arrow"
-                android:title="Youtube" />
-            <item
-                android:id="@+id/facebook"
-                android:icon="@drawable/arrow"
-                android:title="Facebook" />
-            <item
-                android:id="@+id/mail"
-                android:icon="@drawable/arrow"
-                android:title="Mail" />
-            <item
                 android:id="@+id/map"
                 android:icon="@drawable/arrow"
                 android:title="Map" />
-
-
-
-
         </menu>
     </item>
 

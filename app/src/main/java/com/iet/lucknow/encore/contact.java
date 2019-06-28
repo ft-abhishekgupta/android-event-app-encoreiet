@@ -12,10 +12,12 @@ import android.view.ViewGroup;
  */
 public class contact extends Fragment {
     View v;
+
     @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        v=inflater.inflate(R.layout.contact,container,false);
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
+            @Nullable Bundle savedInstanceState) {
+        v = inflater.inflate(R.layout.contact, container, false);
         getActivity().setTitle("Contact / Reach us");
         return v;
     }

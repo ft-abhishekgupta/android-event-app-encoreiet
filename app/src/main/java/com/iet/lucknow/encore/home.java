@@ -17,13 +17,14 @@ import pl.droidsonroids.gif.GifTextView;
  */
 public class home extends Fragment {
     View v;
-    ShimmerButton tv3,tv4,tv5,tv6,tv7,tv8,tv9,tv11,tv12,tv13,tv14;
+    ShimmerButton tv3, tv4, tv5, tv6, tv7, tv8, tv9, tv11, tv12, tv13, tv14;
     Shimmer shimmer2;
+
     @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        v=inflater.inflate(R.layout.home,container,false);
-//        v=inflater.inflate(R.layout.home,container,false);
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
+            @Nullable Bundle savedInstanceState) {
+        v = inflater.inflate(R.layout.home, container, false);
         getActivity().setTitle("Home");
 
         return v;
@@ -32,27 +33,23 @@ public class home extends Fragment {
     @Override
     public void onResume() {
         super.onResume();
-        GifTextView g= (GifTextView) getActivity().findViewById(R.id.mologo);
+        GifTextView g = (GifTextView) getActivity().findViewById(R.id.mologo);
         g.setBackgroundResource(R.drawable.b);
         g.setVisibility(View.VISIBLE);
-
-
-        tv3=(ShimmerButton) getView().findViewById(R.id.button3);
-        tv4=(ShimmerButton) getView().findViewById(R.id.button4);
-        tv5=(ShimmerButton) getView().findViewById(R.id.button5);
-        tv6=(ShimmerButton) getView().findViewById(R.id.button6);
-        tv7=(ShimmerButton) getView().findViewById(R.id.button7);
-        tv8=(ShimmerButton) getView().findViewById(R.id.button8);
-        tv9=(ShimmerButton) getView().findViewById(R.id.button9);
-        tv11=(ShimmerButton) getView().findViewById(R.id.button11);
-        tv12=(ShimmerButton) getView().findViewById(R.id.button12);
-        tv13=(ShimmerButton) getView().findViewById(R.id.button13);
-        tv14=(ShimmerButton) getView().findViewById(R.id.button14);
+        tv3 = (ShimmerButton) getView().findViewById(R.id.button3);
+        tv4 = (ShimmerButton) getView().findViewById(R.id.button4);
+        tv5 = (ShimmerButton) getView().findViewById(R.id.button5);
+        tv6 = (ShimmerButton) getView().findViewById(R.id.button6);
+        tv7 = (ShimmerButton) getView().findViewById(R.id.button7);
+        tv8 = (ShimmerButton) getView().findViewById(R.id.button8);
+        tv9 = (ShimmerButton) getView().findViewById(R.id.button9);
+        tv11 = (ShimmerButton) getView().findViewById(R.id.button11);
+        tv12 = (ShimmerButton) getView().findViewById(R.id.button12);
+        tv13 = (ShimmerButton) getView().findViewById(R.id.button13);
+        tv14 = (ShimmerButton) getView().findViewById(R.id.button14);
         shimmer2 = new Shimmer();
         shimmer2.setDuration(2000);
-
         shimmer2.setStartDelay(500);
-
         shimmer2.start(tv3);
         shimmer2.start(tv4);
         shimmer2.start(tv5);
@@ -64,9 +61,6 @@ public class home extends Fragment {
         shimmer2.start(tv12);
         shimmer2.start(tv13);
         shimmer2.start(tv14);
-
-
-
     }
 
     @Override
@@ -79,10 +73,10 @@ public class home extends Fragment {
         super.onDestroy();
         System.gc();
         Runtime.getRuntime().gc();
-        GifTextView g= (GifTextView) getActivity().findViewById(R.id.mologo);
-        if(g!=null){
-        g.setBackgroundResource(0);
-        g.setVisibility(View.INVISIBLE);}
+        GifTextView g = (GifTextView) getActivity().findViewById(R.id.mologo);
+        if (g != null) {
+            g.setBackgroundResource(0);
+            g.setVisibility(View.INVISIBLE);
+        }
     }
-
 }

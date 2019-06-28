@@ -12,10 +12,12 @@ import android.view.ViewGroup;
  */
 public class developer extends Fragment {
     View v;
+
     @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        v=inflater.inflate(R.layout.developer,container,false);
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
+            @Nullable Bundle savedInstanceState) {
+        v = inflater.inflate(R.layout.developer, container, false);
         getActivity().setTitle("Encore IET App");
         return v;
     }

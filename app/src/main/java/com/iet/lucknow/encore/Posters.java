@@ -8,6 +8,7 @@ import android.os.Bundle;
 
 public class Posters extends AppCompatActivity {
     ViewPager viewPager;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,10 +20,6 @@ public class Posters extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-//        finish();
-//        Intent i=new Intent(this,MainActivity.class);
-//        startActivity(i);
-
         Intent intent = new Intent(this, MainActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
@@ -32,7 +29,8 @@ public class Posters extends AppCompatActivity {
 
     @Override
     protected void onDestroy() {
-        super.onDestroy();System.gc();
+        super.onDestroy();
+        System.gc();
         Runtime.getRuntime().gc();
     }
 }

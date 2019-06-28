@@ -17,11 +17,11 @@ public class CustomAdp extends BaseAdapter {
 
     ArrayList<SingleRowData> dataSource;
     Context c;
-    CustomAdp(Context context, ArrayList d){
-        c=context;
-        dataSource=d;
-    }
 
+    CustomAdp(Context context, ArrayList d) {
+        c = context;
+        dataSource = d;
+    }
 
     @Override
     public int getCount() {
@@ -40,16 +40,15 @@ public class CustomAdp extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        //inflation of layout composite view
-        LayoutInflater li= (LayoutInflater) c.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View row=li.inflate(R.layout.eventview,parent,false);
+        LayoutInflater li = (LayoutInflater) c.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        View row = li.inflate(R.layout.eventview, parent, false);
 
-        ImageView image= (ImageView) row.findViewById(R.id.imageView22);
-        TextView title= (TextView) row.findViewById(R.id.textView30);
-        TextView time= (TextView) row.findViewById(R.id.textView31);
-        TextView desc= (TextView) row.findViewById(R.id.textView32);
+        ImageView image = (ImageView) row.findViewById(R.id.imageView22);
+        TextView title = (TextView) row.findViewById(R.id.textView30);
+        TextView time = (TextView) row.findViewById(R.id.textView31);
+        TextView desc = (TextView) row.findViewById(R.id.textView32);
 
-        SingleRowData rowdata=dataSource.get(position);
+        SingleRowData rowdata = dataSource.get(position);
         image.setImageResource(rowdata.id);
         title.setText(rowdata.title);
         desc.setText(rowdata.desc);

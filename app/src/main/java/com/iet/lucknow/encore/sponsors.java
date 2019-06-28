@@ -19,14 +19,12 @@ public class sponsors extends Fragment {
 
     @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        v=inflater.inflate(R.layout.sponsors,container,false);
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
+            @Nullable Bundle savedInstanceState) {
+        v = inflater.inflate(R.layout.sponsors, container, false);
         getActivity().setTitle("Sponsors");
-
         addListener(v.findViewById(R.id.root));
         mExplosionField = ExplosionField.attach2Window(getActivity());
-
-
         return v;
     }
 
@@ -42,22 +40,20 @@ public class sponsors extends Fragment {
                 @Override
                 public void onClick(final View v) {
                     mExplosionField.explode(v);
-                    CountDownTimer c=new CountDownTimer(1500,500) {
+                    CountDownTimer c = new CountDownTimer(1500, 500) {
                         @Override
                         public void onTick(long millisUntilFinished) {
                         }
 
                         @Override
-                        public  void onFinish() {
+                        public void onFinish() {
                             v.setAlpha(1);
                             v.setScaleX(1);
                             v.setScaleY(1);
-                           // mExplosionField.clear();
-                            if(getView()==v)
+                            if (getView() == v)
                                 addListener(getView().findViewById(R.id.root));
                         }
                     }.start();
-                    //v.setOnClickListener(null);
                 }
             });
         }

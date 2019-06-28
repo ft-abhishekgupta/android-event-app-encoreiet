@@ -14,21 +14,21 @@ public class eventpage extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         setContentView(R.layout.activity_eventpage);
 
-        Intent i=getIntent();
-        String title=i.getStringExtra("t");
-        String desc=i.getStringExtra("d");
-        int im=i.getIntExtra("i",R.drawable.qwe);
+        Intent i = getIntent();
+        String title = i.getStringExtra("t");
+        String desc = i.getStringExtra("d");
+        int im = i.getIntExtra("i", R.drawable.qwe);
 
-        ImageView image= (ImageView) findViewById(R.id.toolbarImage);
+        ImageView image = (ImageView) findViewById(R.id.toolbarImage);
         image.setImageResource(im);
-        TextView t= (TextView) findViewById(R.id.textView42);
-        CollapsingToolbarLayout c= (CollapsingToolbarLayout) findViewById(R.id.collapsingToolbar);
+        TextView t = (TextView) findViewById(R.id.textView42);
+        CollapsingToolbarLayout c = (CollapsingToolbarLayout) findViewById(R.id.collapsingToolbar);
         c.setTitle(title);
         t.setText(desc);
     }
